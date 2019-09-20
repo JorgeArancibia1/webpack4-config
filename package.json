@@ -1,0 +1,19 @@
+{
+  "name": "basewebpack4",
+  "version": "1.0.0",
+  "description": "Es una base de webpack para poder comenzar proyectos con react.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [ 
+    "webpack"
+  ],
+  "author": "@koke",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9"
+  }
+}
