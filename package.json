@@ -6,13 +6,15 @@
   "scripts": {
     "build": "webpack"
   },
-  "keywords": [ 
+  "keywords": [
     "webpack"
   ],
   "author": "@koke",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "3.2.0",
+    "style-loader": "1.0.0",
     "webpack": "4.40.2",
     "webpack-cli": "3.3.9"
   }
