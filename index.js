@@ -1,3 +1,3 @@
 import './index.css'
 
-alert("hola mundo")
+console.log("hola mundo")

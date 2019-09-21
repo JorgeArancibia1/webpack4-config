@@ -20,9 +20,7 @@ module.exports = {
       {
         test:/\.css$/,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
+          'style-loader',
           'css-loader'
         ]
       }
@@ -32,9 +30,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'Webpack 4'
-    }),
-    new MiniCssExtractPlugin({
-      filename:'css/[name].css'
     })
   ]
 }
