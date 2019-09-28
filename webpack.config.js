@@ -10,11 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
-  devServer: {
-    hot: true,
-    open: true,
-    port: 3000
-  },
   module: {
     rules:[
       {
@@ -25,7 +20,18 @@ module.exports = {
           },
           'css-loader'
         ]
-      }
+      },
+      {
+        test:/\.jpg|jpeg|png|svg|gif|woff|eot|ttf|mp4|webm$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options:{
+              limit: 90000
+            }
+          },
+        ]
+      },
     ]
   },
   plugins:[
