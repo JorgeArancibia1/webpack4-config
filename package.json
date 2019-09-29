@@ -14,7 +14,9 @@
   "author": "@koke",
   "license": "ISC",
   "dependencies": {
-    "@babel/runtime": "7.6.0"
+    "@babel/runtime": "7.6.0",
+    "react": "16.10.1",
+    "react-dom": "16.10.1"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
