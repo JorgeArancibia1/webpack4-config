@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development', 
   output: {
     path: path.resolve(__dirname, 'dist'),// El archivo ya procesado aparece en la carpeta dist
-    filename: 'bundle.js',                // Con el nombre de bundle.js
+    filename: 'js/[name].js',                // Con el nombre de bundle.js
     publicPath: 'http://localhost:3000/',
     chunkFilename: 'js/[id].[chunkhash].js'
   },
