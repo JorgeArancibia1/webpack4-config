@@ -1,11 +1,12 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'index.js'),
-  mode: 'development', 
+  entry: {
+    app: path.resolve(__dirname, 'src/index.js')// De aquí toma el archivo javascript principal que se empaquetará.
+  },                                            // En este caso un solo entrypoint para una Single Page Aplication.
+  mode: 'production', 
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js'
